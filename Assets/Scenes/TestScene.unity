@@ -2889,7 +2889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 0}
+  _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &84377474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8293,6 +8294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planeTransform: {fileID: 1533771360}
   _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &388287399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8747,7 +8749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 0}
+  _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &421487136
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10787,7 +10790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 0}
+  _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &548291923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14777,7 +14781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 1340040977}
+  _teleport: 1
+  _teleportPosition: {x: -3.636, y: 11.53, z: -25.406}
 --- !u!65 &804870990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21348,7 +21353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 0}
+  _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1147324157
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21530,6 +21536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planeTransform: {fileID: 243998414}
   _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1156488516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29369,7 +29376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 0}
+  _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &1580162146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33228,6 +33236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planeTransform: {fileID: 1533771360}
   _teleport: 1
+  _teleportPosition: {x: -28.55, y: 8.18, z: -30.321}
 --- !u!65 &1777085212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34545,6 +34554,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7440662311760444841, guid: b833e839e0550914aafdb17ff7006258, type: 3}
   m_PrefabInstance: {fileID: 1836638170}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1838647064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1838647065}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1838647065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838647064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.636, y: 11.53, z: -25.406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1840977791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35913,7 +35952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915538132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.923887, y: -10.901196, z: -13.756905}
+  m_LocalPosition: {x: 16.923887, y: -10.901, z: -13.631}
   m_LocalScale: {x: 1.325547, y: 1.6864157, z: 0.013957367}
   m_Children: []
   m_Father: {fileID: 93143713}
@@ -35933,6 +35972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planeTransform: {fileID: 243998414}
   _teleport: 1
+  _teleportPosition: {x: 3.358, y: 5.474, z: -9.057}
 --- !u!1001 &1917163416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37972,7 +38012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42faaba2730cb81469887ff1ad34b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportTo: {fileID: 0}
+  _teleport: 0
+  _teleportPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &2005364073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40559,11 +40600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 24843666345950656, guid: c1f2aa1a5bdcce54281f70c6944d3690, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.059171
+      value: 10.059366
       objectReference: {fileID: 0}
     - target: {fileID: 24843666345950656, guid: c1f2aa1a5bdcce54281f70c6944d3690, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.906869
+      value: -4.780964
       objectReference: {fileID: 0}
     - target: {fileID: 24843666345950656, guid: c1f2aa1a5bdcce54281f70c6944d3690, type: 3}
       propertyPath: m_LocalRotation.w
@@ -40733,7 +40774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8693917480393135324, guid: a7df1968ed51f9a4a9bd1a5c7d59a068, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.28
+      value: -9.84
       objectReference: {fileID: 0}
     - target: {fileID: 8693917480393135324, guid: a7df1968ed51f9a4a9bd1a5c7d59a068, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40741,7 +40782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8693917480393135324, guid: a7df1968ed51f9a4a9bd1a5c7d59a068, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.59
+      value: -6.17
       objectReference: {fileID: 0}
     - target: {fileID: 8693917480393135324, guid: a7df1968ed51f9a4a9bd1a5c7d59a068, type: 3}
       propertyPath: m_LocalRotation.w
