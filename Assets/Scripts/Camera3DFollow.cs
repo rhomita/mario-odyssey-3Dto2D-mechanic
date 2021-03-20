@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Camera3DFollow : MonoBehaviour
@@ -9,6 +10,12 @@ public class Camera3DFollow : MonoBehaviour
 
     private float _xRotation = 0f;
     private float _yRotation = 30f;
+
+    private void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     void LateUpdate()
     {

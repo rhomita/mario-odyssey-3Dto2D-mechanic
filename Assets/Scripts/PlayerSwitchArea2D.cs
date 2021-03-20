@@ -5,37 +5,25 @@ using UnityEngine;
 public class PlayerSwitchArea2D : MonoBehaviour
 {
     [SerializeField] private Transform _planeTransform;
+    
+    [Header("Teleport")]
     [SerializeField] private bool _teleport;
+    [SerializeField] private Vector3 _teleportPosition;
     
     private void OnTriggerExit(Collider _collider)
     {
         if (_collider.TryGetComponent(out PlayerSwitcher playerSwitcher))
         {
             if (!playerSwitcher.Is3D) return;
-
+            playerSwitcher.transform.rotation = Quaternion.LookRotation(_planeTransform.forward);
             playerSwitcher.Deactivate();
 
-            if (Physics.Raycast(_planeTransform.position, -_planeTransform.forward, out RaycastHit hit))
+            Vector3 raycastOrigin = _teleport ? _teleportPosition : playerSwitcher.transform.position; 
+            if (Physics.Raycast(raycastOrigin, -playerSwitcher.transform.forward, 
+                out RaycastHit hitPlayer))
             {
-                if (_teleport)
-                {
-                    playerSwitcher.transform.position = hit.point + (_planeTransform.forward * .035f);
-                }
-                else
-                {
-                    if (Physics.Raycast(playerSwitcher.transform.position, -_planeTransform.forward, out RaycastHit hitPlayer))
-                    {
-                        playerSwitcher.transform.position = hitPlayer.point + (_planeTransform.forward * .035f);
-                    }        
-                }
-
-                playerSwitcher.transform.rotation = Quaternion.LookRotation(hit.normal);
+                playerSwitcher.transform.position = hitPlayer.point + playerSwitcher.transform.forward * 0.0035f;
             }
-            else
-            {
-                Debug.LogError("Not Found");
-            }
-            
             playerSwitcher.Enable2D();
         }
     }
